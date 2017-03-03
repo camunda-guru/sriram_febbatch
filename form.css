@@ -1,0 +1,19 @@
+﻿fieldset
+{
+    border:2px solid red;
+    width:40%;
+    margin-left:25%;
+}
+legend
+{
+    text-align:center;
+      font-size:large;
+      color:blue;
+}
+
+input{
+    width:80%;
+    font-size:large;
+    margin-bottom:2%;
+    margin-left:10%;
+}
