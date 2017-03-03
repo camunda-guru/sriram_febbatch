@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link type="text/css" rel="stylesheet" href="css/main.css" />
+    <script type="text/javascript" src="Scripts/angular.js"></script>
+    <script type="text/javascript" src="Scripts/i18n/angular-locale_ta.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+
+</head>
+<body>
+    <div ng-app="CustomerModule" ng-controller="CustomerDatactrl">
+        <fieldset>
+            <legend>Customer Information</legend>
+
+            <table>
+                <tr >
+                    <td>Customer Id</td>
+                    <td>Name</td>
+                    <td>DOB</td>
+                    <td>Birth Place</td>
+                    <td>Net Worth</td>
+                </tr>
+                <tr ng-repeat="obj in customer">
+                    <td>{{obj.customerId}}</td>
+                    <td>{{obj.name|uppercase}}</td>
+                    <td>{{obj.dob|date:"fullDate"}}</td>
+                    <td>{{obj.birthPlace|uppercase}}</td>
+                    <td>{{obj.netWorth|currency}}</td>
+                </tr>
+            </table>
+        </fieldset>
+
+    </div>
+
+</body>
+</html>
