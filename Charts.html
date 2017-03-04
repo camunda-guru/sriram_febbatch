@@ -1,0 +1,17 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script type="text/javascript" src="Scripts/angular.js"></script>
+   <script type="text/javascript" src="Scripts/Chart.js"></script>
+    <script type="text/javascript" src="Scripts/angular-chart.js"></script>
+    <script type="text/javascript" src="js/chartscript.js"></script>
+</head>
+<body ng-app="ChartModule">
+    <div class="charts" ng-controller="LineCtrl">
+        <canvas id="line" class="chart chart-line" chart-data="data"
+                chart-labels="labels" chart-series="series" chart-options="options"
+                chart-dataset-override="datasetOverride" chart-click="onClick"></canvas>
+    </div>
+</body>
+</html>
